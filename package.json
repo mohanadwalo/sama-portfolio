@@ -1,0 +1,23 @@
+{
+  "name": "sama-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w assets/css -o assets/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohanadwalo/portfolio-old.git"
+  },
+  "keywords": [
+    "Portfolio",
+    "Software Developer"
+  ],
+  "author": "Mohanad Walo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohanadwalo/portfolio-old/issues"
+  },
+  "homepage": "https://github.com/mohanadwalo/portfolio-old#readme"
+}

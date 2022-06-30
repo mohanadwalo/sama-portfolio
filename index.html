@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Html5 responsive template, webdesign" />
+    <title>SAMA-portfolio</title>
+    <link href="assets/css/site.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="small-device-header">
+      <img
+        onclick="changeTopNavState('open')"
+        src="./assets/svgs/menu.svg"
+        alt="open side menu"
+      />
+      <button onclick="downloadCV()">Download CV</button>
+    </div>
+    <div class="side-nav hide">
+      <span class="x" onclick="changeTopNavState('close')">X</span>
+      <div class="avatar-container">
+        <img src="assets/img/avatar.jpeg" alt="avatar" />
+        <nav class="top-nav">
+          <div class="links">
+            <span onclick="scrollToSection('highlight')">highlight</span>
+            <span onclick="scrollToSection('skills')">skills</span>
+            <span onclick="scrollToSection('projects')">projects</span>
+            <span onclick="scrollToSection('experience')">experience</span>
+            <span onclick="scrollToSection('education')">education</span>
+            <div class="download-cv">
+              <button onclick="downloadCV()">Download CV</button>
+            </div>
+          </div>
+        </nav>
+        <div class="social-media">
+          <div class="row">
+            <a href="#" class="twitter">
+              <img src="./assets/svgs/twitter.svg" alt="twitter" />
+            </a>
+            <a href="#" class="linkedin">
+              <img src="./assets/svgs/linkedin.svg" alt="linkedin"
+            /></a>
+            <a href="#" class="instagram">
+              <img src="./assets/svgs/instagram.svg" alt="instagram"
+            /></a>
+          </div>
+          <div class="row">
+            <a href="#" class="github">
+              <img src="./assets/svgs/github.svg" alt="github"
+            /></a>
+            <a href="#" class="gmail">
+              <img src="./assets/svgs/gmail.svg" alt="gmail"
+            /></a>
+          </div>
+        </div>
+        <div class="contact">
+          <div class="row">
+            <div class="title email">Email</div>
+            <div class="content">testtest@gmail.com</div>
+          </div>
+          <div class="row">
+            <div class="title phone">phone</div>
+            <div class="content">0088-1245-1452</div>
+          </div>
+          <div class="row"></div>
+        </div>
+      </div>
+    </div>
+
+    <section id="highlight" class="highlight">
+      <div class="name">Hi, I am Jon</div>
+      <div class="intro">
+        I am front end engineer with 8 years experience building user
+        interfaces. When I develop a product, I always focus on quality more
+        than quantity. I also have good experience developing and managing large
+        systems architecture.
+      </div>
+    </section>
+    <section id="skills" class="top-skills">
+      <h3 class="title">skills</h3>
+      <div class="top-skills-list">
+        <label>Python</label>
+        <label>Front-End</label>
+        <label>React.js</label>
+        <label>React.js</label>
+      </div>
+    </section>
+    <section id="projects" class="projects">
+      <h3 class="title">projects</h3>
+      <div class="next-prev">
+        <span id="project-prev-item" class="prev-item hide"></span>
+        <span id="project-next-item" class="next-item"></span>
+      </div>
+      <div class="projects-list">
+        <div class="project" onclick="showModal('project-details-modal')">
+          <img src="./assets/img/project_1.png" alt="project 1" />
+          <h4 class="project-title">Project Title</h4>
+        </div>
+        <div class="project" onclick="showModal('project-details-modal')">
+          <img src="./assets/img/project_2.png" alt="project 2" />
+          <h4 class="project-title">Project Title</h4>
+        </div>
+        <div class="project" onclick="showModal('project-details-modal')">
+          <img src="./assets/img/project_3.png" alt="project 3" />
+          <h4 class="project-title">Project Title</h4>
+        </div>
+        <div class="project" onclick="showModal('project-details-modal')">
+          <img src="./assets/img/project_4.png" alt="project 4" />
+          <h4 class="project-title">Project Title</h4>
+        </div>
+        <div class="project" onclick="showModal('project-details-modal')">
+          <img src="./assets/img/project_5.png" alt="project 5" />
+          <h4 class="project-title">Project Title</h4>
+        </div>
+        <div class="project" onclick="showModal('project-details-modal')">
+          <img src="./assets/img/project_6.png" alt="project 6" />
+          <h4 class="project-title">Project Title</h4>
+        </div>
+        <div class="project" onclick="showModal('project-details-modal')">
+          <img src="./assets/img/project_7.png" alt="project 7" />
+          <h4 class="project-title">Project Title</h4>
+        </div>
+      </div>
+    </section>
+    <section id="experience" class="experience-history">
+      <h3 class="title">experience</h3>
+      <div class="experience">
+        <div class="content">
+          <div class="location">Tokyo, Japan</div>
+          <div class="from-to">
+            <span class="from">2021</span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="to">2019</span>
+          </div>
+          <div class="details">
+            <div class="company">T-Webs Solutions</div>
+            <div class="company-description">
+              T-Webs is a consulting and software company that develops systems
+              for business solutions.
+            </div>
+            <div class="tasks">
+              <h5>Tasks</h5>
+              <ul>
+                <li>
+                  System Design, Review and deploy other developers code to
+                  production.
+                </li>
+                <li>
+                  System Design, Review and deploy other developers code to
+                  production.
+                </li>
+                <li>
+                  System Design, Review and deploy other developers code to
+                  production.
+                </li>
+                <li>
+                  System Design, Review and deploy other developers code to
+                  production.
+                </li>
+              </ul>
+            </div>
+            <div class="skills">
+              <h5>skills</h5>
+              <div class="skills-list">
+                <label>placeholder</label>
+                <label>placeholder</label>
+                <label>placeholder</label>
+                <label>placeholder</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="education" class="education-history">
+      <h3 class="title">education</h3>
+      <div class="education">
+        <div class="content">
+          <div class="location">Tokyo, Japan</div>
+          <div class="from-to">
+            <span class="from">2021</span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="to">2019</span>
+          </div>
+          <div class="details">
+            <div class="major">
+              Bachelor's degree in Information Technology Engineering
+            </div>
+            <div class="university">
+              Faculty of Informatics Engineering Science, T University
+            </div>
+            <div class="university-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mi augue
+              diam aliquet neque ultricies. Amet, in enim velit orci vitae urna.
+              Nascetur diam cras erat aliquet sit a, sed dictumst. Purus sit eu
+              ipsum a, sodales. Ac donec enim sagittis, adipiscing odio elit
+              rhoncus dolor. Eu porttitor quis feugiat.
+            </div>
+            <div class="courses">
+              <h5>courses</h5>
+              <div class="courses-list">
+                <label>placeholder</label>
+                <label>placeholder</label>
+                <label>placeholder</label>
+                <label>placeholder</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="project-details-modal" class="modal hide">
+      <span
+        class="x-close"
+        title="close"
+        onclick="closeModal('project-details-modal')"
+        >X</span
+      >
+      <section class="project-details">
+        <h3 class="title">Project Description</h3>
+        <div class="project-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae ac
+          commodo vel sem senectus pretium nulla. Porta non ut turpis non sit
+          viverra amet. Pretium hendrerit egestas ultricies netus vitae sed.
+        </div>
+        <h3 class="title">gallery</h3>
+        <div class="project-gallery">
+          <img
+            id="gallery-image_1"
+            onclick="showProjectGallerySlider(event,'project-gallery-slider')"
+            src="./assets/img/project_details_1.png"
+            alt="project details 1"
+          />
+          <img
+            id="gallery-image_2"
+            onclick="showProjectGallerySlider(event,'project-gallery-slider')"
+            src="./assets/img/project_details_2.png"
+            alt="project details 2"
+          />
+          <img
+            id="gallery-image_3"
+            onclick="showProjectGallerySlider(event,'project-gallery-slider')"
+            src="./assets/img/project_details_3.png"
+            alt="project details 3"
+          />
+          <img
+            id="gallery-image_4"
+            onclick="showProjectGallerySlider(event,'project-gallery-slider')"
+            src="./assets/img/project_details_4.png"
+            alt="project details 4"
+          />
+          <img
+            id="gallery-image_5"
+            onclick="showProjectGallerySlider(event,'project-gallery-slider')"
+            src="./assets/img/project_details_5.png"
+            alt="project details 5"
+          />
+          <img
+            id="gallery-image_6"
+            onclick="showProjectGallerySlider(event,'project-gallery-slider')"
+            src="./assets/img/project_details_6.png"
+            alt="project details 6"
+          />
+          <img
+            id="gallery-image_7"
+            onclick="showProjectGallerySlider(event,'project-gallery-slider')"
+            src="./assets/img/project_details_7.png"
+            alt="project details 7"
+          />
+          <img
+            id="gallery-image_8"
+            onclick="showProjectGallerySlider(event,'project-gallery-slider')"
+            src="./assets/img/project_details_8.png"
+            alt="project details 8"
+          />
+        </div>
+      </section>
+    </div>
+    <div id="project-gallery-slider" class="modal hide">
+      <span
+        class="x-close"
+        title="close"
+        onclick="closeModal('project-gallery-slider')"
+        >X</span
+      >
+      <section class="project-image">
+        <span id="slider-prev-item" class="prev-item"></span>
+        <span id="slider-next-item" class="next-item"></span>
+        <img id="project-current-image" src="./assets//img/project_1.png" />
+        <div class="image-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae ac
+          commodo vel sem senectus pretium nulla. Porta non ut turpis non sit
+          viverra amet. Pretium hendrerit egestas ultricies netus vitae sed.
+        </div>
+      </section>
+    </div>
+    <script src="./assets/js/site.js"></script>
+  </body>
+</html>

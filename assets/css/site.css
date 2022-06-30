@@ -1,0 +1,847 @@
+@font-face {
+  font-family: "Lato";
+  font-weight: 400;
+  src: local("Lato"), url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff"); }
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 700;
+  src: local("Lato"), url("../fonts/Lato-Bold.woff2") format("woff2"), url("../fonts/Lato-Bold.woff") format("woff"); }
+
+@font-face {
+  font-family: "Lato";
+  font-weight: 500;
+  src: local("Lato"), url("../fonts/Lato-Medium.woff2") format("woff2"), url("../fonts/Lato-Medium.woff") format("woff"); }
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+
+* {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  padding-left: 17.734rem;
+  padding-top: 3rem; }
+
+@media screen and (max-width: 768px) {
+  body {
+    padding-left: 0;
+    padding-top: 0; } }
+
+.body-font, .experience-history .experience .content .details .company-description,
+.experience-history .experience .content .details .university-description,
+.experience-history .education .content .details .company-description,
+.experience-history .education .content .details .university-description,
+.education-history .experience .content .details .company-description,
+.education-history .experience .content .details .university-description,
+.education-history .education .content .details .company-description,
+.education-history .education .content .details .university-description, .experience-history .experience .content .details .tasks ul li,
+.experience-history .education .content .details .tasks ul li,
+.education-history .experience .content .details .tasks ul li,
+.education-history .education .content .details .tasks ul li {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400; }
+
+.h1-font, .highlight .name {
+  font-size: 3rem;
+  line-height: 5rem;
+  font-weight: 700;
+  margin: 0; }
+
+.h3-font, section .title {
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 400;
+  margin: 0; }
+
+.h4-font, .h4Bold-font, .projects .projects-list .project .project-title, .highlight .intro, .experience-history .experience .content .details .company,
+.experience-history .experience .content .details .major,
+.experience-history .education .content .details .company,
+.experience-history .education .content .details .major,
+.education-history .experience .content .details .company,
+.education-history .experience .content .details .major,
+.education-history .education .content .details .company,
+.education-history .education .content .details .major, .modal .x-close {
+  font-size: 1.5rem;
+  line-height: 2.3rem;
+  font-weight: 400;
+  margin: 0; }
+
+.h5-font, .experience-history .experience .content .details .university,
+.experience-history .education .content .details .university,
+.education-history .experience .content .details .university,
+.education-history .education .content .details .university, .experience-history .experience .content .details .tasks h5,
+.experience-history .experience .content .details .skills h5,
+.experience-history .experience .content .details .courses h5,
+.experience-history .education .content .details .tasks h5,
+.experience-history .education .content .details .skills h5,
+.experience-history .education .content .details .courses h5,
+.education-history .experience .content .details .tasks h5,
+.education-history .experience .content .details .skills h5,
+.education-history .experience .content .details .courses h5,
+.education-history .education .content .details .tasks h5,
+.education-history .education .content .details .skills h5,
+.education-history .education .content .details .courses h5, .project-details .project-description, .project-image .image-description {
+  font-size: 1.25rem;
+  line-height: 2rem;
+  font-weight: 400;
+  margin: 0; }
+
+.h4Bold-font, .projects .projects-list .project .project-title {
+  font-weight: 700; }
+
+.h6-font, .h6Bold-font, .side-nav .contact .row .content, .side-nav .contact .row .title, .experience-history .experience .content .location,
+.experience-history .experience .content .from-to,
+.experience-history .education .content .location,
+.experience-history .education .content .from-to,
+.education-history .experience .content .location,
+.education-history .experience .content .from-to,
+.education-history .education .content .location,
+.education-history .education .content .from-to {
+  color: #072228;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+  margin: 0; }
+
+.h6Bold-font, .side-nav .contact .row .content {
+  font-weight: 700; }
+
+.links-font, .top-nav .links span, .top-nav .links .download-cv button, .top-skills .top-skills-list label, .experience-history .experience .content .details .skills .skills-list label,
+.experience-history .experience .content .details .skills .courses-list label,
+.experience-history .experience .content .details .courses .skills-list label,
+.experience-history .experience .content .details .courses .courses-list label,
+.experience-history .education .content .details .skills .skills-list label,
+.experience-history .education .content .details .skills .courses-list label,
+.experience-history .education .content .details .courses .skills-list label,
+.experience-history .education .content .details .courses .courses-list label,
+.education-history .experience .content .details .skills .skills-list label,
+.education-history .experience .content .details .skills .courses-list label,
+.education-history .experience .content .details .courses .skills-list label,
+.education-history .experience .content .details .courses .courses-list label,
+.education-history .education .content .details .skills .skills-list label,
+.education-history .education .content .details .skills .courses-list label,
+.education-history .education .content .details .courses .skills-list label,
+.education-history .education .content .details .courses .courses-list label, .small-device-header button {
+  color: #072228;
+  font-size: 0.875rem;
+  line-height: 1.313rem;
+  font-weight: 500; }
+
+@media screen and (max-width: 768px) {
+  .body-font, .experience-history .experience .content .details .company-description,
+  .experience-history .experience .content .details .university-description,
+  .experience-history .education .content .details .company-description,
+  .experience-history .education .content .details .university-description,
+  .education-history .experience .content .details .company-description,
+  .education-history .experience .content .details .university-description,
+  .education-history .education .content .details .company-description,
+  .education-history .education .content .details .university-description, .experience-history .experience .content .details .tasks ul li,
+  .experience-history .education .content .details .tasks ul li,
+  .education-history .experience .content .details .tasks ul li,
+  .education-history .education .content .details .tasks ul li {
+    font-size: 0.875rem;
+    line-height: 1rem; }
+  .h1-font, .highlight .name {
+    font-size: 2rem;
+    line-height: 3rem; }
+  .h3-font, section .title {
+    font-size: 1.5rem;
+    line-height: 2rem; }
+  .h4-font, .h4Bold-font, .projects .projects-list .project .project-title, .highlight .intro, .experience-history .experience .content .details .company,
+  .experience-history .experience .content .details .major,
+  .experience-history .education .content .details .company,
+  .experience-history .education .content .details .major,
+  .education-history .experience .content .details .company,
+  .education-history .experience .content .details .major,
+  .education-history .education .content .details .company,
+  .education-history .education .content .details .major, .modal .x-close {
+    font-size: 1rem;
+    line-height: 1.6rem; }
+  .h5-font, .experience-history .experience .content .details .university,
+  .experience-history .education .content .details .university,
+  .education-history .experience .content .details .university,
+  .education-history .education .content .details .university, .experience-history .experience .content .details .tasks h5,
+  .experience-history .experience .content .details .skills h5,
+  .experience-history .experience .content .details .courses h5,
+  .experience-history .education .content .details .tasks h5,
+  .experience-history .education .content .details .skills h5,
+  .experience-history .education .content .details .courses h5,
+  .education-history .experience .content .details .tasks h5,
+  .education-history .experience .content .details .skills h5,
+  .education-history .experience .content .details .courses h5,
+  .education-history .education .content .details .tasks h5,
+  .education-history .education .content .details .skills h5,
+  .education-history .education .content .details .courses h5, .project-details .project-description, .project-image .image-description {
+    font-size: 1rem;
+    line-height: 1.5rem; }
+  .h6-font, .h6Bold-font, .side-nav .contact .row .content, .side-nav .contact .row .title, .experience-history .experience .content .location,
+  .experience-history .experience .content .from-to,
+  .experience-history .education .content .location,
+  .experience-history .education .content .from-to,
+  .education-history .experience .content .location,
+  .education-history .experience .content .from-to,
+  .education-history .education .content .location,
+  .education-history .education .content .from-to {
+    color: #072228;
+    font-size: 0.875rem;
+    line-height: 1rem; }
+  .links-font, .top-nav .links span, .top-nav .links .download-cv button, .top-skills .top-skills-list label, .experience-history .experience .content .details .skills .skills-list label,
+  .experience-history .experience .content .details .skills .courses-list label,
+  .experience-history .experience .content .details .courses .skills-list label,
+  .experience-history .experience .content .details .courses .courses-list label,
+  .experience-history .education .content .details .skills .skills-list label,
+  .experience-history .education .content .details .skills .courses-list label,
+  .experience-history .education .content .details .courses .skills-list label,
+  .experience-history .education .content .details .courses .courses-list label,
+  .education-history .experience .content .details .skills .skills-list label,
+  .education-history .experience .content .details .skills .courses-list label,
+  .education-history .experience .content .details .courses .skills-list label,
+  .education-history .experience .content .details .courses .courses-list label,
+  .education-history .education .content .details .skills .skills-list label,
+  .education-history .education .content .details .skills .courses-list label,
+  .education-history .education .content .details .courses .skills-list label,
+  .education-history .education .content .details .courses .courses-list label, .small-device-header button {
+    line-height: 1rem; } }
+
+/*button*/
+.side-nav {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  height: 100%;
+  width: 17.734rem;
+  padding-top: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #dbe1de;
+  transition: all 0.5s; }
+
+.side-nav .x {
+  display: none; }
+
+.side-nav .avatar-container {
+  height: 12.5rem;
+  width: 12.5rem;
+  border-radius: 50%;
+  border: 1px solid #007994;
+  box-shadow: 0 1px 5px #007994; }
+
+.side-nav .avatar-container img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%; }
+
+.side-nav .social-media {
+  display: flex;
+  flex-direction: column; }
+
+.side-nav .social-media .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem; }
+
+.side-nav .social-media .row a {
+  display: inline-block;
+  margin: 0 1rem; }
+
+.side-nav .contact {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem; }
+
+.side-nav .contact .row {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 1rem;
+  position: relative; }
+
+.side-nav .contact .row .title {
+  display: flex;
+  align-items: center;
+  text-transform: capitalize; }
+
+.side-nav .contact .row .title.email::before {
+  position: absolute;
+  left: -2rem;
+  content: url("../svgs/email.svg"); }
+
+.side-nav .contact .row .title.phone::before {
+  position: absolute;
+  left: -2rem;
+  content: url("../svgs/phone.svg"); }
+
+.side-nav .contact .row .content {
+  display: flex; }
+
+@media screen and (max-width: 768px) {
+  .side-nav {
+    width: auto;
+    right: 0;
+    top: 0;
+    overflow: hidden; }
+  .side-nav.hide {
+    transform: translateX(-100%); }
+  .side-nav .x {
+    display: block;
+    color: #072228;
+    font-weight: 700;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    font-size: 1.4rem; } }
+
+.top-nav {
+  position: fixed;
+  height: 3.125rem;
+  background-color: #dbe1de;
+  z-index: 99;
+  top: 0;
+  right: 0;
+  left: 0; }
+
+.top-nav .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: relative; }
+
+.top-nav .links span {
+  padding: 0 1rem;
+  text-transform: capitalize;
+  cursor: pointer; }
+
+.top-nav .links .download-cv {
+  position: absolute;
+  right: 1rem; }
+
+.top-nav .links .download-cv button {
+  border-radius: 2rem;
+  height: 2.2rem;
+  border: 0;
+  background-color: #61ac71;
+  padding: 0 1rem; }
+
+@media screen and (max-width: 768px) {
+  .top-nav {
+    position: relative;
+    height: auto; }
+  .top-nav .links {
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem 0;
+    align-items: center; }
+  .top-nav .links a {
+    padding: 0.5rem 0; }
+  .top-nav .links .download-cv {
+    position: relative;
+    right: auto; } }
+
+section {
+  padding-top: 3rem; }
+
+section .title {
+  color: #072228;
+  text-transform: capitalize;
+  background-image: url("../svgs/v-cylinder.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 1.2rem;
+  margin: 0; }
+
+.highlight {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background: linear-gradient(180deg, #b6e4ee 0%, rgba(255, 255, 255, 0) 30%); }
+
+.highlight .name {
+  color: #007994; }
+
+.highlight .intro {
+  color: #072228;
+  max-width: 80%; }
+
+@media screen and (max-width: 768px) {
+  .highlight .intro {
+    max-width: 100%; } }
+
+.top-skills .top-skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.5rem; }
+
+.top-skills .top-skills-list label {
+  border-radius: 2rem;
+  height: 2.2rem;
+  border: 0;
+  background-color: #dec218;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  margin: 0 1rem; }
+
+@media screen and (max-width: 768px) {
+  .top-skills .top-skills-list label {
+    margin-bottom: 1rem; } }
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 1rem;
+  width: 100%;
+  overflow: hidden; }
+
+.projects ::-webkit-scrollbar {
+  display: none; }
+
+.projects .projects-list {
+  position: relative;
+  display: flex;
+  overflow-x: scroll;
+  padding-bottom: 2rem;
+  margin-top: 1.5rem; }
+
+.projects .projects-list .project {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  width: 17.5rem;
+  margin: 0 1rem; }
+
+.projects .projects-list .project img {
+  height: 16.25rem; }
+
+.projects .projects-list .project .project-title {
+  padding: 0.8rem 0;
+  color: #072228; }
+
+.experience-history,
+.education-history {
+  display: flex;
+  flex-direction: column; }
+
+.experience-history .experience,
+.experience-history .education,
+.education-history .experience,
+.education-history .education {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0; }
+
+.experience-history .experience .content,
+.experience-history .education .content,
+.education-history .experience .content,
+.education-history .education .content {
+  display: flex; }
+
+.experience-history .experience .content .location,
+.experience-history .experience .content .from-to,
+.experience-history .education .content .location,
+.experience-history .education .content .from-to,
+.education-history .experience .content .location,
+.education-history .experience .content .from-to,
+.education-history .education .content .location,
+.education-history .education .content .from-to {
+  color: #072228;
+  display: flex;
+  flex-direction: column; }
+
+.experience-history .experience .content .location,
+.experience-history .education .content .location,
+.education-history .experience .content .location,
+.education-history .education .content .location {
+  justify-content: center;
+  padding: 0 1rem; }
+
+.experience-history .experience .content .from-to,
+.experience-history .education .content .from-to,
+.education-history .experience .content .from-to,
+.education-history .education .content .from-to {
+  justify-content: space-between;
+  align-items: center; }
+
+.experience-history .experience .content .from-to .dot,
+.experience-history .education .content .from-to .dot,
+.education-history .experience .content .from-to .dot,
+.education-history .education .content .from-to .dot {
+  display: inline-block;
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 50%;
+  background-color: #dbe1de;
+  margin: 1rem 0; }
+
+.experience-history .experience .content .details,
+.experience-history .education .content .details,
+.education-history .experience .content .details,
+.education-history .education .content .details {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1.5rem; }
+
+.experience-history .experience .content .details .company,
+.experience-history .experience .content .details .major,
+.experience-history .education .content .details .company,
+.experience-history .education .content .details .major,
+.education-history .experience .content .details .company,
+.education-history .experience .content .details .major,
+.education-history .education .content .details .company,
+.education-history .education .content .details .major {
+  color: #007994;
+  text-transform: capitalize; }
+
+.experience-history .experience .content .details .university,
+.experience-history .education .content .details .university,
+.education-history .experience .content .details .university,
+.education-history .education .content .details .university {
+  color: #072228;
+  padding: 0.5rem; }
+
+.experience-history .experience .content .details .company-description,
+.experience-history .experience .content .details .university-description,
+.experience-history .education .content .details .company-description,
+.experience-history .education .content .details .university-description,
+.education-history .experience .content .details .company-description,
+.education-history .experience .content .details .university-description,
+.education-history .education .content .details .company-description,
+.education-history .education .content .details .university-description {
+  color: #072228;
+  padding: 0.5rem;
+  max-width: 37.5rem; }
+
+.experience-history .experience .content .details .tasks,
+.experience-history .experience .content .details .skills,
+.experience-history .experience .content .details .courses,
+.experience-history .education .content .details .tasks,
+.experience-history .education .content .details .skills,
+.experience-history .education .content .details .courses,
+.education-history .experience .content .details .tasks,
+.education-history .experience .content .details .skills,
+.education-history .experience .content .details .courses,
+.education-history .education .content .details .tasks,
+.education-history .education .content .details .skills,
+.education-history .education .content .details .courses {
+  display: flex;
+  flex-direction: column; }
+
+.experience-history .experience .content .details .tasks h5,
+.experience-history .experience .content .details .skills h5,
+.experience-history .experience .content .details .courses h5,
+.experience-history .education .content .details .tasks h5,
+.experience-history .education .content .details .skills h5,
+.experience-history .education .content .details .courses h5,
+.education-history .experience .content .details .tasks h5,
+.education-history .experience .content .details .skills h5,
+.education-history .experience .content .details .courses h5,
+.education-history .education .content .details .tasks h5,
+.education-history .education .content .details .skills h5,
+.education-history .education .content .details .courses h5 {
+  color: #072228;
+  text-transform: capitalize;
+  padding: 0.5rem 0; }
+
+.experience-history .experience .content .details .tasks ul,
+.experience-history .education .content .details .tasks ul,
+.education-history .experience .content .details .tasks ul,
+.education-history .education .content .details .tasks ul {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  list-style: none;
+  list-style-image: url("../svgs/square.svg"); }
+
+.experience-history .experience .content .details .tasks ul li,
+.experience-history .education .content .details .tasks ul li,
+.education-history .experience .content .details .tasks ul li,
+.education-history .education .content .details .tasks ul li {
+  padding: 0.2rem; }
+
+.experience-history .experience .content .details .skills .skills-list,
+.experience-history .experience .content .details .skills .courses-list,
+.experience-history .experience .content .details .courses .skills-list,
+.experience-history .experience .content .details .courses .courses-list,
+.experience-history .education .content .details .skills .skills-list,
+.experience-history .education .content .details .skills .courses-list,
+.experience-history .education .content .details .courses .skills-list,
+.experience-history .education .content .details .courses .courses-list,
+.education-history .experience .content .details .skills .skills-list,
+.education-history .experience .content .details .skills .courses-list,
+.education-history .experience .content .details .courses .skills-list,
+.education-history .experience .content .details .courses .courses-list,
+.education-history .education .content .details .skills .skills-list,
+.education-history .education .content .details .skills .courses-list,
+.education-history .education .content .details .courses .skills-list,
+.education-history .education .content .details .courses .courses-list {
+  display: flex;
+  padding: 0.5rem; }
+
+.experience-history .experience .content .details .skills .skills-list label,
+.experience-history .experience .content .details .skills .courses-list label,
+.experience-history .experience .content .details .courses .skills-list label,
+.experience-history .experience .content .details .courses .courses-list label,
+.experience-history .education .content .details .skills .skills-list label,
+.experience-history .education .content .details .skills .courses-list label,
+.experience-history .education .content .details .courses .skills-list label,
+.experience-history .education .content .details .courses .courses-list label,
+.education-history .experience .content .details .skills .skills-list label,
+.education-history .experience .content .details .skills .courses-list label,
+.education-history .experience .content .details .courses .skills-list label,
+.education-history .experience .content .details .courses .courses-list label,
+.education-history .education .content .details .skills .skills-list label,
+.education-history .education .content .details .skills .courses-list label,
+.education-history .education .content .details .courses .skills-list label,
+.education-history .education .content .details .courses .courses-list label {
+  border-radius: 2rem;
+  height: 2.2rem;
+  border: 0;
+  background-color: #dbe1de;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  margin: 0 1rem; }
+
+@media screen and (max-width: 768px) {
+  .experience-history .experience .content,
+  .experience-history .education .content,
+  .education-history .experience .content,
+  .education-history .education .content {
+    flex-direction: column;
+    padding: 0 1rem; }
+  .experience-history .experience .content .location,
+  .experience-history .experience .content .from-to,
+  .experience-history .education .content .location,
+  .experience-history .education .content .from-to,
+  .education-history .experience .content .location,
+  .education-history .experience .content .from-to,
+  .education-history .education .content .location,
+  .education-history .education .content .from-to {
+    flex-direction: row; }
+  .experience-history .experience .content .details,
+  .experience-history .education .content .details,
+  .education-history .experience .content .details,
+  .education-history .education .content .details {
+    padding: 0; }
+  .experience-history .experience .content .details .tasks .skills-list,
+  .experience-history .experience .content .details .tasks .courses-list,
+  .experience-history .experience .content .details .skills .skills-list,
+  .experience-history .experience .content .details .skills .courses-list,
+  .experience-history .experience .content .details .courses .skills-list,
+  .experience-history .experience .content .details .courses .courses-list,
+  .experience-history .education .content .details .tasks .skills-list,
+  .experience-history .education .content .details .tasks .courses-list,
+  .experience-history .education .content .details .skills .skills-list,
+  .experience-history .education .content .details .skills .courses-list,
+  .experience-history .education .content .details .courses .skills-list,
+  .experience-history .education .content .details .courses .courses-list,
+  .education-history .experience .content .details .tasks .skills-list,
+  .education-history .experience .content .details .tasks .courses-list,
+  .education-history .experience .content .details .skills .skills-list,
+  .education-history .experience .content .details .skills .courses-list,
+  .education-history .experience .content .details .courses .skills-list,
+  .education-history .experience .content .details .courses .courses-list,
+  .education-history .education .content .details .tasks .skills-list,
+  .education-history .education .content .details .tasks .courses-list,
+  .education-history .education .content .details .skills .skills-list,
+  .education-history .education .content .details .skills .courses-list,
+  .education-history .education .content .details .courses .skills-list,
+  .education-history .education .content .details .courses .courses-list {
+    flex-wrap: wrap; }
+  .experience-history .experience .content .details .tasks .skills-list label,
+  .experience-history .experience .content .details .tasks .courses-list label,
+  .experience-history .experience .content .details .skills .skills-list label,
+  .experience-history .experience .content .details .skills .courses-list label,
+  .experience-history .experience .content .details .courses .skills-list label,
+  .experience-history .experience .content .details .courses .courses-list label,
+  .experience-history .education .content .details .tasks .skills-list label,
+  .experience-history .education .content .details .tasks .courses-list label,
+  .experience-history .education .content .details .skills .skills-list label,
+  .experience-history .education .content .details .skills .courses-list label,
+  .experience-history .education .content .details .courses .skills-list label,
+  .experience-history .education .content .details .courses .courses-list label,
+  .education-history .experience .content .details .tasks .skills-list label,
+  .education-history .experience .content .details .tasks .courses-list label,
+  .education-history .experience .content .details .skills .skills-list label,
+  .education-history .experience .content .details .skills .courses-list label,
+  .education-history .experience .content .details .courses .skills-list label,
+  .education-history .experience .content .details .courses .courses-list label,
+  .education-history .education .content .details .tasks .skills-list label,
+  .education-history .education .content .details .tasks .courses-list label,
+  .education-history .education .content .details .skills .skills-list label,
+  .education-history .education .content .details .skills .courses-list label,
+  .education-history .education .content .details .courses .skills-list label,
+  .education-history .education .content .details .courses .courses-list label {
+    margin-bottom: 1rem; } }
+
+/*modal*/
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  overflow-y: scroll; }
+
+.modal .x-close {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  cursor: pointer; }
+
+#project-details-modal {
+  z-index: 999;
+  background-color: #fff; }
+
+#project-details-modal .x-close {
+  color: #072228; }
+
+#project-details-modal.hide {
+  display: none; }
+
+#project-gallery-slider {
+  z-index: 1000;
+  background-color: rgba(7, 34, 40, 0.66);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+#project-gallery-slider .x-close {
+  color: #fff; }
+
+#project-gallery-slider.hide {
+  display: none; }
+
+.project-details {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, #b6e4ee 0%, rgba(255, 255, 255, 0) 5rem);
+  padding-top: 3rem;
+  padding-bottom: 1rem; }
+
+.project-details .project-description {
+  padding: 1rem;
+  color: #072228;
+  max-width: 43.75rem; }
+
+.project-details .project-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem; }
+
+.project-details .project-gallery img {
+  max-height: 13.25rem;
+  max-width: 20rem;
+  margin: 1rem;
+  cursor: pointer; }
+
+@media screen and (max-width: 768px) {
+  .project-details .project-gallery {
+    flex-direction: column;
+    flex-wrap: nowrap; } }
+
+.project-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 2rem;
+  width: 80%;
+  height: 90%;
+  position: relative; }
+
+@media screen and (max-width: 768px) {
+  .project-image {
+    padding: 1rem;
+    width: 95%;
+    height: 85%; } }
+
+.project-image img {
+  max-width: 76.25rem; }
+
+@media screen and (max-width: 768px) {
+  .project-image img {
+    max-width: 100%; } }
+
+.project-image .image-description {
+  padding: 1rem;
+  color: #072228;
+  max-width: 43.75rem; }
+
+.projects .next-item,
+.project-image .next-item {
+  display: inline-block;
+  content: url("../svgs/left-arrow.svg");
+  transform: rotate(180deg);
+  margin-left: 0.5rem; }
+
+.projects .prev-item,
+.project-image .prev-item {
+  display: inline-block;
+  content: url("../svgs/left-arrow.svg"); }
+
+.projects .hide,
+.project-image .hide {
+  visibility: hidden; }
+
+.projects .next-prev {
+  position: absolute;
+  cursor: pointer;
+  right: 1rem; }
+
+.project-image .next-item {
+  position: absolute;
+  right: 1rem;
+  cursor: pointer; }
+
+.project-image .prev-item {
+  position: absolute;
+  left: 1rem;
+  cursor: pointer; }
+
+@media screen and (max-width: 768px) {
+  .project-image .next-item {
+    top: 10%;
+    right: 0.4rem; }
+  .project-image .prev-item {
+    top: 10%;
+    left: 0.4rem; } }
+
+/*mobile header*/
+.small-device-header {
+  display: none; }
+
+.small-device-header button {
+  border-radius: 2rem;
+  height: 2.2rem;
+  border: 0;
+  background-color: #61ac71;
+  padding: 0 1rem; }
+
+@media screen and (max-width: 768px) {
+  .small-device-header {
+    background-color: #dbe1de;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem; } }
