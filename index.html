@@ -4,6 +4,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="Html5 responsive template, webdesign" />
+    <meta property="og:title" content="Sama Portfolio" />
+    <meta property="og:description" content="Open source template" />
+    <meta property="og:image" content="assets/img/avatar.jpeg" />
     <title>SAMA-portfolio</title>
     <link href="assets/css/site.css" rel="stylesheet" />
   </head>
@@ -23,11 +26,24 @@
         <img src="assets/img/avatar.jpeg" alt="avatar" />
         <nav class="top-nav">
           <div class="links">
-            <span onclick="scrollToSection('highlight')">highlight</span>
-            <span onclick="scrollToSection('skills')">skills</span>
-            <span onclick="scrollToSection('projects')">projects</span>
-            <span onclick="scrollToSection('experience')">experience</span>
-            <span onclick="scrollToSection('education')">education</span>
+            <span
+              id="spnhighlight"
+              class="active"
+              onclick="scrollToSection('highlight')"
+              >highlight
+            </span>
+            <span id="spnskills" onclick="scrollToSection('skills')"
+              >skills</span
+            >
+            <span id="spnprojects" onclick="scrollToSection('projects')"
+              >projects</span
+            >
+            <span id="spnexperience" onclick="scrollToSection('experience')"
+              >experience</span
+            >
+            <span id="spneducation" onclick="scrollToSection('education')"
+              >education</span
+            >
             <div class="download-cv">
               <button onclick="downloadCV()">Download CV</button>
             </div>

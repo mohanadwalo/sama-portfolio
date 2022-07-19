@@ -54,7 +54,30 @@ const updateSliderNextPrev = () => {
   if (projecstList.scrollLeft === 0) prev.classList.add("hide");
   else if (prev.classList.contains("hide")) prev.classList.remove("hide");
 };
+//observer
+let options = {
+  rootMargin: "32px",
+  threshold: [1, 0.75],
+};
+const callback = (entries) => {
+  for (let i = 0; i < entries.length; i++) {
+    if (entries[i].isIntersecting && entries[i].intersectionRatio >= 0.75) {
+      const targetSection = entries[i].target.id;
 
+      document.querySelectorAll(".links span").forEach((spn) => {
+        if (spn.classList.contains("active")) {
+          spn.classList.remove("active");
+        }
+      });
+      document.getElementById("spn" + targetSection)?.classList.add("active");
+    }
+    break;
+  }
+};
+let observer = new IntersectionObserver(callback, options);
+document
+  .querySelectorAll("section")
+  .forEach((section) => observer.observe(section));
 //project details
 const closeModal = (id) => {
   document.getElementById(id).classList.add("hide");

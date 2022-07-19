@@ -34,7 +34,7 @@ $greyMedium: #dbe1de;
 $primaryDark: #007994;
 $secondaryLight: #61ac71;
 $dark: #072228;
-$accentYellow: #dec218;
+$accent: #8adc9c;
 $white: #fff;
 $breakpoint-tablet: 768px;
 body {
@@ -259,6 +259,9 @@ body {
       padding: 0 1rem;
       text-transform: capitalize;
       cursor: pointer;
+      &.active {
+        color: $primaryDark;
+      }
     }
     .download-cv {
       position: absolute;
@@ -325,7 +328,7 @@ section {
     flex-wrap: wrap;
     padding: 0.5rem;
     label {
-      @include button-or-label($accentYellow);
+      @include button-or-label($accent);
       display: flex;
       align-items: center;
       margin: 0 1rem;
@@ -644,6 +647,11 @@ section {
 /*mobile header*/
 .small-device-header {
   display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
   button {
     @include button-or-label($secondaryLight);
   }
@@ -652,6 +660,6 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.5rem;
+    padding: 0.2rem;
   }
 }

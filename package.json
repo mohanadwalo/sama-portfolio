@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/mohanadwalo/portfolio-old/issues"
   },
-  "homepage": "https://github.com/mohanadwalo/portfolio-old#readme"
+  "homepage": "https://github.com/mohanadwalo/portfolio-old#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
 }

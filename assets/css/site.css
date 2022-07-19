@@ -329,6 +329,9 @@ body {
   text-transform: capitalize;
   cursor: pointer; }
 
+.top-nav .links span.active {
+  color: #007994; }
+
 .top-nav .links .download-cv {
   position: absolute;
   right: 1rem; }
@@ -392,7 +395,7 @@ section .title {
   border-radius: 2rem;
   height: 2.2rem;
   border: 0;
-  background-color: #dec218;
+  background-color: #8adc9c;
   padding: 0 1rem;
   display: flex;
   align-items: center;
@@ -829,7 +832,12 @@ section .title {
 
 /*mobile header*/
 .small-device-header {
-  display: none; }
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99; }
 
 .small-device-header button {
   border-radius: 2rem;
@@ -844,4 +852,4 @@ section .title {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.5rem; } }
+    padding: 0.2rem; } }
